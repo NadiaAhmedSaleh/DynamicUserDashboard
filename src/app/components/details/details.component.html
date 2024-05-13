@@ -1,0 +1,22 @@
+<div class="container min-vh-100">
+  <div class="row">
+    <div class="col-md-4">
+      <img [src]="userData?.avatar" alt="" class="w-100" />
+    </div>
+
+    <div class="col-md-8">
+      <h5><span class="text-muted">ID :</span> {{ userData?.id }}</h5>
+      <h5>
+        <span class="text-muted">First Name :</span> {{ userData?.first_name }}
+      </h5>
+      <h5>
+        <span class="text-muted">Last Name :</span> {{ userData?.last_name }}
+      </h5>
+      <h5><span class="text-muted">Email : </span> {{ userData?.email }}</h5>
+    </div>
+  </div>
+
+  <button class="btn btn-primary my-4" (click)="navigateBack()">
+    Go to Back
+  </button>
+</div>
